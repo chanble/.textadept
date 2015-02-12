@@ -1,0 +1,6 @@
+[submodule "modules/fuzzy_finder"]
+	path = modules/fuzzy_finder
+	url = https://github.com/chanble/ta-fuzzy-finder.git
+[submodule "modules/common"]
+	path = modules/common
+	url = https://github.com/rgieseke/ta-common.git
