@@ -1,0 +1,2 @@
+# .textadept
+textadept config
