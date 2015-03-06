@@ -5,4 +5,3 @@ require 'fuzzy_finder'
 keys[OSX and 'ch' or 'ch'] = textadept.editing.highlight_word
 
 buffer.set_whitespace_fore(buffer, 1, 0x45463b)
-
