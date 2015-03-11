@@ -4,4 +4,7 @@ require 'fuzzy_finder'
 -- high light selected word
 keys[OSX and 'ch' or 'ch'] = textadept.editing.highlight_word
 
-buffer.set_whitespace_fore(buffer, 1, 0x45463b)
+events.connect(events.VIEW_NEW, function()
+	local buffer = buffer
+	buffer.set_whitespace_fore(buffer, 1, 0x45463b)
+end)
