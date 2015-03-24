@@ -1,4 +1,4 @@
-if not CURSES then ui.set_theme('base16-monokai-dark') end
+if not CURSES then ui.set_theme('base16-monokai-dark', {font = 'Consolas', fontsize = 12}) end
 require 'common'
 require 'fuzzy_finder'
 -- high light selected word
