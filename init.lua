@@ -3,3 +3,4 @@ require 'common'
 require 'fuzzy_finder'
 -- high light selected word
 keys[OSX and 'ch' or 'ch'] = textadept.editing.highlight_word
+events.connect(events.DOUBLE_CLICK, textadept.editing.highlight_word)
