@@ -7,8 +7,16 @@
 local M = {}
 local keys = keys
 
-M.fuzzy_finder = require 'fuzzy_finder.fuzzyfinder'
-local filter = {extensions = {}, folders = {"^%.", 'node_modules'}}
-keys[OSX and 'mp' or 'cp'] = {M.fuzzy_finder.show, filter}
+M.ff_path = lfs.currentdir()
+-- 
+args.register('-d', '--directory', 1, function(path)
+	if not (not path or type(path) ~= 'string' or path == '.') then
+		M.ff_path = lfs.abspath(path)
+	end
+end, 'set fuzzy finder root path')
+
+function M.show(filter)
+	io.snapopen(M.ff_path, filter)
+end
 
 return M
