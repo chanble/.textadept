@@ -8,5 +8,4 @@ local filter = {
 }
 keys[OSX and 'mp' or 'cp'] = {fuzzy_finder.show, filter}
 -- high light selected word
-keys[OSX and 'ch' or 'ch'] = textadept.editing.highlight_word
 events.connect(events.DOUBLE_CLICK, textadept.editing.highlight_word)
