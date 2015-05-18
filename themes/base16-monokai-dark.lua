@@ -94,13 +94,10 @@ end
 -- Indicators.
 local INDIC_BRACEMATCH = textadept.editing.INDIC_BRACEMATCH
 buffer.indic_fore[INDIC_BRACEMATCH] = property_int['color.base0B']
-buffer.indic_style[INDIC_BRACEMATCH] = buffer.INDIC_DOTBOX
-buffer.indic_alpha[INDIC_BRACEMATCH] = 255
 buffer.indic_outline_alpha[INDIC_BRACEMATCH] = 100
 local INDIC_HIGHLIGHT = textadept.editing.INDIC_HIGHLIGHT
 buffer.indic_fore[INDIC_HIGHLIGHT] = property_int['color.base04']
-buffer.indic_alpha[INDIC_HIGHLIGHT] = 55
-buffer.indic_style[INDIC_HIGHLIGHT] = buffer.INDIC_BOX
+buffer.indic_alpha[INDIC_HIGHLIGHT] = 130
 
 -- Long Lines.
 buffer.edge_colour = property_int['color.base01']
